@@ -1,0 +1,112 @@
+{
+  "topics": {
+    "technology": {
+      "keywords": ["tech", "technology", "computer", "software", "hardware", "programming", "ai", "artificial intelligence", "machine learning", "deep learning", "neural network", "algorithm", "data", "cloud", "server", "database", "api", "framework", "javascript", "python", "java", "react", "node", "linux", "windows", "macos", "android", "ios", "web", "app", "mobile", "cybersecurity", "blockchain", "cryptocurrency", "quantum computing", "robotics", "iot", "internet of things", "5g", "virtual reality", "augmented reality", "devops", "microservices", "docker", "kubernetes"],
+      "articles": [
+        {
+          "title": "The Evolution of Artificial Intelligence",
+          "content": "Artificial Intelligence (AI) has transformed from a theoretical concept to a practical technology that powers many aspects of modern life. From natural language processing to computer vision, AI systems can now perform tasks that were once thought to require human intelligence. Machine learning, a subset of AI, enables systems to learn and improve from experience without being explicitly programmed. Deep learning, which uses neural networks with multiple layers, has achieved remarkable results in image recognition, speech processing, and language understanding. The field continues to advance rapidly, with new breakthroughs in generative AI, reinforcement learning, and multimodal models.",
+          "sources": ["MIT Technology Review", "Stanford AI Lab", "Google AI Research"],
+          "date": "2025-12-15"
+        },
+        {
+          "title": "Modern Web Development Trends",
+          "content": "Web development continues to evolve with new frameworks, tools, and best practices. React, Vue, and Angular remain the dominant frontend frameworks, while Node.js, Python (Django/Flask), and Go power many backend systems. The rise of serverless architectures, edge computing, and WebAssembly is changing how applications are built and deployed. TypeScript has become the preferred language for large-scale JavaScript projects, offering type safety and better developer experience. Progressive Web Apps (PWAs) bridge the gap between web and native applications, providing offline capabilities and native-like performance.",
+          "sources": ["Stack Overflow Developer Survey", "State of JS Report", "MDN Web Docs"],
+          "date": "2025-11-20"
+        },
+        {
+          "title": "Cybersecurity in the Modern Era",
+          "content": "As our world becomes increasingly digital, cybersecurity has never been more important. Organizations face threats from ransomware, phishing attacks, zero-day exploits, and sophisticated state-sponsored hacking groups. Key security practices include implementing zero-trust architectures, multi-factor authentication, regular security audits, and employee training. The use of AI in both offensive and defensive cybersecurity is growing, with machine learning models being used to detect anomalies and predict potential threats before they materialize.",
+          "sources": ["NIST Cybersecurity Framework", "OWASP", "Krebs on Security"],
+          "date": "2025-10-08"
+        }
+      ]
+    },
+    "science": {
+      "keywords": ["science", "physics", "chemistry", "biology", "astronomy", "space", "nasa", "planet", "star", "galaxy", "universe", "atom", "molecule", "cell", "dna", "gene", "evolution", "climate", "environment", "ecology", "geology", "ocean", "weather", "experiment", "research", "study", "discovery", "quantum", "particle", "energy", "gravity", "relativity", "photon", "electron", "proton", "neutron"],
+      "articles": [
+        {
+          "title": "Breakthroughs in Space Exploration",
+          "content": "Space exploration has entered a new golden age. NASA's Artemis program aims to return humans to the Moon and establish a sustainable presence there. SpaceX's Starship represents the largest and most powerful rocket ever built, designed for missions to Mars and beyond. The James Webb Space Telescope continues to revolutionize our understanding of the early universe, exoplanets, and stellar formation. Private companies like Blue Origin and Rocket Lab are making space more accessible, while international cooperation on the International Space Station continues to advance scientific research in microgravity.",
+          "sources": ["NASA", "ESA", "SpaceX Research Publications"],
+          "date": "2025-12-01"
+        },
+        {
+          "title": "Climate Science and Global Warming",
+          "content": "Climate science confirms that human activities are the primary driver of global warming observed since the mid-20th century. Global temperatures have risen approximately 1.1°C above pre-industrial levels. The effects include rising sea levels, more frequent extreme weather events, ocean acidification, and biodiversity loss. Scientists emphasize the importance of limiting warming to 1.5°C to avoid the most catastrophic impacts. Renewable energy technologies, carbon capture, reforestation, and sustainable agriculture are among the key strategies for mitigating climate change.",
+          "sources": ["IPCC", "NASA Climate", "NOAA"],
+          "date": "2025-09-15"
+        },
+        {
+          "title": "Advances in Genetics and Biotechnology",
+          "content": "The field of genetics has been revolutionized by CRISPR-Cas9 gene editing technology, which allows scientists to precisely modify DNA sequences. This technology has potential applications in treating genetic diseases, developing drought-resistant crops, and even eliminating mosquito-borne illnesses. mRNA vaccine technology, which proved successful against COVID-19, is being explored for cancer treatment, rare diseases, and other infectious diseases. Personalized medicine, guided by an individual's genetic profile, promises more effective treatments with fewer side effects.",
+          "sources": ["Nature Genetics", "The Broad Institute", "NIH"],
+          "date": "2025-11-03"
+        }
+      ]
+    },
+    "health": {
+      "keywords": ["health", "medical", "medicine", "doctor", "hospital", "disease", "treatment", "therapy", "mental health", "nutrition", "diet", "exercise", "fitness", "wellness", "vaccine", "virus", "bacteria", "infection", "surgery", "diagnosis", "symptom", "prevention", "healthcare", "pharmaceutical", "drug", "supplement", "vitamin", "sleep", "stress", "anxiety", "depression"],
+      "articles": [
+        {
+          "title": "Mental Health Awareness and Treatment",
+          "content": "Mental health is increasingly recognized as a critical component of overall well-being. Depression, anxiety, PTSD, and other mental health conditions affect millions worldwide. Evidence-based treatments include cognitive behavioral therapy (CBT), medication, mindfulness-based interventions, and lifestyle modifications. Digital mental health tools, including therapy apps and telehealth services, have expanded access to care. Research shows that regular exercise, adequate sleep, social connection, and stress management techniques significantly improve mental health outcomes. Early intervention and reducing stigma are key priorities.",
+          "sources": ["World Health Organization", "National Institute of Mental Health", "American Psychological Association"],
+          "date": "2025-12-10"
+        },
+        {
+          "title": "Nutrition and Diet Science",
+          "content": "Modern nutrition science emphasizes the importance of whole foods, balanced macronutrients, and diverse micronutrient intake. The Mediterranean diet, rich in fruits, vegetables, whole grains, lean proteins, and healthy fats, is consistently associated with reduced risk of heart disease, diabetes, and cognitive decline. Emerging research explores the gut microbiome's role in overall health, immune function, and even mood regulation. Intermittent fasting has shown promise for weight management and metabolic health, though individual responses vary. Hydration, fiber intake, and limiting processed foods remain fundamental recommendations.",
+          "sources": ["Harvard School of Public Health", "Mayo Clinic", "WHO Nutrition Guidelines"],
+          "date": "2025-10-22"
+        }
+      ]
+    },
+    "history": {
+      "keywords": ["history", "historical", "ancient", "medieval", "modern", "war", "revolution", "civilization", "empire", "kingdom", "dynasty", "century", "era", "period", "archaeology", "artifact", "culture", "tradition", "heritage", "monument", "battle", "treaty", "independence", "colonial", "renaissance", "industrial revolution"],
+      "articles": [
+        {
+          "title": "Great Civilizations of the Ancient World",
+          "content": "Ancient civilizations laid the foundations for modern society. Mesopotamia, often called the cradle of civilization, developed writing, agriculture, and urban planning. Ancient Egypt built the pyramids and developed advanced mathematics and medicine. The Greek city-states pioneered democracy, philosophy, and scientific inquiry, while Rome created an extensive legal system, engineering marvels, and a vast empire. The Indus Valley civilization demonstrated sophisticated urban planning with advanced drainage systems. Ancient China contributed papermaking, gunpowder, the compass, and printing. These civilizations' innovations continue to influence our world today.",
+          "sources": ["Smithsonian Institution", "British Museum", "National Geographic History"],
+          "date": "2025-08-14"
+        },
+        {
+          "title": "The Industrial Revolution and Its Impact",
+          "content": "The Industrial Revolution, beginning in Britain in the late 18th century, fundamentally transformed human society. The shift from agrarian economies to industrial manufacturing brought about unprecedented changes in production, transportation, and daily life. Key innovations included the steam engine, spinning jenny, power loom, and later the internal combustion engine. While the revolution brought economic growth and technological progress, it also led to urbanization challenges, labor exploitation, environmental pollution, and social inequality. The lessons of the Industrial Revolution remain relevant as we navigate the current digital and AI revolutions.",
+          "sources": ["Oxford Academic History", "Smithsonian", "History.com"],
+          "date": "2025-07-30"
+        }
+      ]
+    },
+    "general": {
+      "keywords": ["what", "how", "why", "when", "where", "who", "explain", "tell", "describe", "define", "meaning", "difference", "between", "compare", "best", "top", "recommend", "help", "guide", "tutorial", "learn", "understand"],
+      "articles": [
+        {
+          "title": "How to Learn Effectively",
+          "content": "Effective learning requires a combination of strategies tailored to individual needs. Active recall, where you test yourself on material rather than passively re-reading, is one of the most effective study techniques. Spaced repetition, reviewing information at increasing intervals, helps transfer knowledge to long-term memory. The Feynman Technique involves explaining concepts in simple terms to identify gaps in understanding. Breaking study sessions into focused intervals (like the Pomodoro Technique) helps maintain concentration. Connecting new information to existing knowledge, teaching others, and practicing retrieval all enhance learning outcomes.",
+          "sources": ["Educational Psychology Research", "Learning Scientists", "Coursera Learning Hub"],
+          "date": "2025-11-15"
+        }
+      ]
+    },
+    "news": {
+      "keywords": ["news", "latest", "current", "today", "recent", "breaking", "update", "happening", "event", "trending"],
+      "articles": [
+        {
+          "title": "Technology Trends Shaping 2026",
+          "content": "As we enter 2026, several technology trends are poised to reshape industries. Generative AI continues its rapid evolution, with models becoming more capable and efficient. Edge computing is bringing processing power closer to data sources, enabling real-time applications. Sustainable technology practices are gaining priority as organizations focus on reducing their carbon footprint. Quantum computing is moving closer to practical applications in drug discovery, financial modeling, and cryptography. The convergence of AI with biotechnology is opening new frontiers in personalized medicine and agricultural innovation.",
+          "sources": ["Gartner Tech Trends", "MIT Technology Review", "Wired"],
+          "date": "2026-01-15"
+        },
+        {
+          "title": "Global Economic Outlook 2026",
+          "content": "The global economy in 2026 faces both opportunities and challenges. Digital transformation continues to drive productivity gains across sectors. Green energy investments are accelerating, with solar and wind power costs reaching new lows. Supply chain resilience has become a strategic priority following recent disruptions. The labor market is evolving with remote work, gig economies, and AI-augmented roles becoming more prevalent. Emerging markets are showing strong growth potential, while developed economies focus on sustainable growth and innovation-driven competitiveness.",
+          "sources": ["World Economic Forum", "IMF World Economic Outlook", "Bloomberg Economics"],
+          "date": "2026-02-01"
+        }
+      ]
+    }
+  }
+}

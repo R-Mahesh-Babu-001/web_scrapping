@@ -1,0 +1,18 @@
+{
+  "name": "wick-city",
+  "version": "1.0.0",
+  "description": "wick_city - A full-stack intelligent search engine PWA",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && node index.js",
+    "dev": "cd server && node index.js & cd client && npx react-scripts start",
+    "dev:server": "cd server && node index.js",
+    "dev:client": "cd client && npx react-scripts start",
+    "render-build": "cd server && npm install && cd ../client && npm install && npm run build"
+  }
+}
