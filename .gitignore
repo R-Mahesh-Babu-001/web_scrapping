@@ -1,13 +1,13 @@
 # Dependencies
 node_modules/
-**/node_modules/
+server/node_modules/
+client/node_modules/
 
 # Build output
 client/build/
-perplexity-clone/client/build/
 
 # Uploads
-**/uploads/
+server/uploads/
 
 # Environment
 .env
@@ -33,7 +33,3 @@ eng.traineddata
 *.swp
 *.swo
 *~
-
-# Lock files (optional - uncomment if you want to track them)
-# package-lock.json
-/package.json
