@@ -49,8 +49,8 @@ function runWorker(query, mode) {
   return new Promise(function(resolve, reject) {
     const workerPath = path.join(__dirname, 'worker.js');
     execFile('node', [workerPath, query, mode || 'default'], {
-      timeout: 30000,
-      maxBuffer: 1024 * 1024,
+      timeout: 90000,
+      maxBuffer: 5 * 1024 * 1024,
       env: process.env,
     }, function(error, stdout, stderr) {
       if (stderr) console.error('[Worker stderr]', stderr.substring(0, 200));
