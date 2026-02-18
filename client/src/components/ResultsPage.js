@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import AnswerCard from './AnswerCard';
 import SourceCard from './SourceCard';
 import LoadingAnimation from './LoadingAnimation';
+import logo from '../assets/logo.png';
 import '../styles/results.css';
 
 const ResultsPage = ({ query, result, isLoading, onSearch, onImageSearch, onGoHome }) => {
@@ -11,7 +12,7 @@ const ResultsPage = ({ query, result, isLoading, onSearch, onImageSearch, onGoHo
       {/* Top bar with logo and new chat */}
       <div className="results-topbar">
         <button className="topbar-logo" onClick={onGoHome} title="Home">
-          <span className="topbar-logo-text">W</span>
+          <img src={logo} alt="wick_city" className="topbar-logo-img" />
         </button>
         <button className="new-chat-btn" onClick={onGoHome} title="New Chat">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -19,6 +19,26 @@
   margin-top: -60px;
 }
 
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 16px;
+  filter: drop-shadow(0 4px 16px rgba(108, 92, 231, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.home-logo-img:hover {
+  transform: scale(1.05);
+}
+
 .logo-text {
   font-size: 48px;
   font-weight: 700;
@@ -81,6 +101,11 @@
 
 /* Responsive */
 @media (max-width: 640px) {
+  .home-logo-img {
+    width: 72px;
+    height: 72px;
+  }
+
   .logo-text {
     font-size: 36px;
   }

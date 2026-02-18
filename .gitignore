@@ -33,3 +33,4 @@ eng.traineddata
 *.swp
 *.swo
 *~
+client/nohup.out

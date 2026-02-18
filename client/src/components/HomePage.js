@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SearchBar from './SearchBar';
+import logo from '../assets/logo.png';
 import '../styles/home.css';
 
 const HomePage = ({ onSearch, onImageSearch, onFetchNews }) => {
@@ -17,7 +18,10 @@ const HomePage = ({ onSearch, onImageSearch, onFetchNews }) => {
   return (
     <div className="home-container">
       <div className="home-content">
-        <h1 className="logo-text">wick<span className="logo-highlight">_city</span></h1>
+        <div className="logo-wrapper">
+          <img src={logo} alt="wick_city" className="home-logo-img" />
+          <h1 className="logo-text">wick<span className="logo-highlight">_city</span></h1>
+        </div>
         
         <SearchBar 
           onSearch={onSearch}
