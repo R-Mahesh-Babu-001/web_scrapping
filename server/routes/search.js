@@ -1,46 +1,45 @@
+'use strict';
+// =============================================================================
+// SEARCH ROUTE — routes/search.js
+// =============================================================================
+// Alternative Express route (can be mounted if needed).
+// The main search is handled directly in index.js for simplicity.
+// =============================================================================
+
 const express = require('express');
 const router = express.Router();
 const { webSearch } = require('../services/webScraper');
 
-// Main search endpoint - real web scraping
 router.post('/search', async (req, res) => {
   try {
     const { query, mode } = req.body;
-
-    if (!query || query.trim().length === 0) {
-      return res.status(400).json({ error: 'Query is required' });
+    if (!query || !query.trim()) {
+      return res.status(400).json({ error: 'Query is required.' });
     }
 
-    let searchQuery = query;
+    let searchQuery = query.trim();
+    let searchMode = 'default';
 
-    // Adjust query based on mode
     switch (mode) {
+      case 'detailed': searchMode = 'detailed'; break;
+      case 'concise':  searchMode = 'concise'; break;
       case 'compare':
-        if (!query.toLowerCase().includes(' vs ') && !query.toLowerCase().includes('compare')) {
-          searchQuery = `compare ${query}`;
-        }
+        if (!/\bvs\b|\bcompare/i.test(searchQuery)) searchQuery = `compare ${searchQuery}`;
         break;
       case 'troubleshoot':
-        if (!query.toLowerCase().includes('fix') && !query.toLowerCase().includes('solve')) {
-          searchQuery = `how to fix ${query}`;
-        }
+        if (!/\bfix\b|\bsolve/i.test(searchQuery)) searchQuery = `how to fix ${searchQuery}`;
         break;
       case 'recommend':
-        if (!query.toLowerCase().includes('best') && !query.toLowerCase().includes('recommend')) {
-          searchQuery = `best ${query} recommendations`;
-        }
+        if (!/\bbest\b|\brecommend/i.test(searchQuery)) searchQuery = `best ${searchQuery} recommendations`;
         break;
       case 'news':
-        searchQuery = `${query} latest news ${new Date().getFullYear()}`;
+        searchQuery = `${searchQuery} latest news ${new Date().getFullYear()}`;
         break;
     }
 
-    const result = await webSearch(searchQuery);
+    const result = await webSearch(searchQuery, searchMode);
 
-    console.log(`[Route] Sending response, answer length: ${result.answer?.length}, sources: ${result.sources?.length}`);
-    
-    // Sanitize the result to ensure clean JSON
-    const cleanResult = {
+    const clean = {
       answer: String(result.answer || '').replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, ''),
       sources: (result.sources || []).map(s => ({
         name: String(s.name || ''),
@@ -52,42 +51,11 @@ router.post('/search', async (req, res) => {
       title: String(result.title || ''),
     };
 
-    const payload = { success: true, data: cleanResult };
-    res.status(200).json(payload);
-    console.log(`[Route] Response sent successfully`);
-
+    res.json({ success: true, data: clean });
   } catch (error) {
-    console.error('Search error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('[Route] Search error:', error.message);
+    res.status(500).json({ error: 'Search failed. Please try again.' });
   }
-});
-
-// Get suggestions/autocomplete
-router.get('/suggestions', (req, res) => {
-  const suggestions = [
-    "What is artificial intelligence?",
-    "Explain quantum computing",
-    "Latest technology trends",
-    "How does machine learning work?",
-    "Climate change effects",
-    "Space exploration breakthroughs",
-    "Mental health tips",
-    "History of ancient civilizations",
-    "Web development best practices",
-    "Cybersecurity best practices"
-  ];
-
-  const query = (req.query.q || '').toLowerCase();
-  const filtered = query
-    ? suggestions.filter(s => s.toLowerCase().includes(query))
-    : suggestions.slice(0, 5);
-
-  res.json({ suggestions: filtered });
-});
-
-// Health check
-router.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
 module.exports = router;
