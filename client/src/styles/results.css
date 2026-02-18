@@ -25,12 +25,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   border: none;
   background: transparent;
   cursor: pointer;
-  border-radius: 9px;
+  border-radius: 10px;
   transition: all 0.2s ease;
   padding: 0;
   overflow: hidden;
