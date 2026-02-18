@@ -1,7 +1,7 @@
 services:
   - type: web
     name: wick-city
-    runtime: node
+    runtime: node 
     plan: free
     buildCommand: npm run render-build
     startCommand: npm start
