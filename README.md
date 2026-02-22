@@ -7,6 +7,7 @@ A full-stack Progressive Web App search engine with web scraping, image analysis
 <a href="https://web-scrapping-erwz.onrender.com" target="_blank">
 https://web-scrapping-erwz.onrender.com
 </a>
+    <br>
 <b>Important Notice</b><br><br>
 
 This project is hosted on <b>Render (Free Tier)</b>.<br>
