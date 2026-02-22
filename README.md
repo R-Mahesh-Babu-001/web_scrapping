@@ -16,8 +16,6 @@ If the application does not load immediately, please wait <b>30–60 seconds</b>
 for the server to wake up.
 <br><br>
 
-## Progressive Web App (PWA)
-
 Open the live link → Wait for the server → Click <b>Install App</b>
 
 </div>
