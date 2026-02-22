@@ -3,16 +3,10 @@
 A full-stack Progressive Web App search engine with web scraping, image analysis, voice search, and Indian news aggregation.
 
 <div align="center">
-
-## Live Demo
-
 <b>Live Link:</b><br>
 <a href="https://web-scrapping-erwz.onrender.com" target="_blank">
 https://web-scrapping-erwz.onrender.com
 </a>
-
-<br><br>
-
 <b>Important Notice</b><br><br>
 
 This project is hosted on <b>Render (Free Tier)</b>.<br>
@@ -20,7 +14,6 @@ Since it uses a free hosting service, the server may go to sleep after a period 
 
 If the application does not load immediately, please wait <b>30–60 seconds</b><br>
 for the server to wake up.
-
 <br><br>
 
 ## Progressive Web App (PWA)
