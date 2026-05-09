@@ -19,7 +19,7 @@ for the server to wake up.
 
 Open the live link → Wait for the server → Click <b>Install App</b>
 
-
+</div>
 ## Local Development
 
 ```bash
