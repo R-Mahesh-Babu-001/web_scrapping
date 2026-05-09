@@ -19,60 +19,6 @@ for the server to wake up.
 
 Open the live link → Wait for the server → Click <b>Install App</b>
 
-</div>
-
-## Project Structure
-
-```
-perplexity-clone/
-├── package.json            # Root scripts (build, start, dev)
-├── render.yaml             # Render deployment blueprint
-├── .gitignore
-├── scripts/
-│   └── generate-icons.js   # PWA icon generator (uses sharp)
-├── server/                 # Express.js backend
-│   ├── package.json        # Server dependencies
-│   ├── index.js            # Main server (API + static serving)
-│   ├── worker.js           # Web search worker (child process)
-│   ├── imageWorker.js      # Image analysis worker
-│   ├── newsWorker.js       # News scraping worker
-│   ├── routes/
-│   │   └── search.js       # Search route (unused, routes in index.js)
-│   ├── services/
-│   │   ├── webScraper.js   # DDG + Wikipedia + HTML scraping
-│   │   ├── imageAnalyzer.js# OCR + image metadata (tesseract + sharp)
-│   │   ├── newsScraper.js  # Indian news RSS + HTML scraping
-│   │   └── searchEngine.js # Alternative search engine
-│   ├── data/
-│   │   └── knowledge-base.json
-│   └── uploads/            # Temp image uploads (gitignored)
-└── client/                 # React frontend (PWA)
-    ├── package.json        # Client dependencies + proxy config
-    ├── public/
-    │   ├── index.html      # HTML with PWA meta tags
-    │   ├── manifest.json   # PWA manifest
-    │   ├── sw.js           # Service worker (offline support)
-    │   ├── favicon.png
-    │   └── icons/          # PWA icons (72-512px)
-    └── src/
-        ├── index.js        # Entry + SW registration
-        ├── App.js          # Root component + API calls
-        ├── components/
-        │   ├── HomePage.js
-        │   ├── SearchBar.js
-        │   ├── ResultsPage.js
-        │   ├── AnswerCard.js
-        │   ├── SourceCard.js
-        │   └── LoadingAnimation.js
-        └── styles/
-            ├── global.css
-            ├── home.css
-            ├── searchbar.css
-            ├── results.css
-            ├── answer.css
-            ├── source.css
-            └── loading.css
-```
 
 ## Local Development
 
