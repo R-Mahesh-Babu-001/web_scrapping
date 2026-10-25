@@ -12,7 +12,7 @@ const { webSearch } = require('../services/webScraper');
 
 router.post('/search', async (req, res) => {
   try {
-    const { query, mode } = req.body;
+    const { query, mode } = req.body || {};
     if (!query || !query.trim()) {
       return res.status(400).json({ error: 'Query is required.' });
     }
